@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#edf2ef"
+    tools:context=".AllNotes">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:text="@string/my_notes"
+        android:textColor="#bf4b4b"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/searchbar"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:background="#e3e5e8"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="@string/search_notes"
+        android:textSize="17sp"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:paddingStart="10dp"
+        android:layout_marginBottom="8dp"
+        tools:ignore="RtlSymmetry" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="8dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/notes_recycler"
+        android:layout_height="470dp"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="8dp"
+        tools:listitem="@layout/notes_tow"
+        android:background="#ffffff"/>
+
+    <Button
+        android:id="@+id/add_note"
+        android:layout_width="208dp"
+        android:layout_height="59dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="2dp"
+        android:backgroundTint="#bf4b4b"
+        android:drawableStart="@drawable/baseline_add_24"
+        android:drawableTint="#FFFFFF"
+        android:textColor="#ffffff"
+        android:text="@string/add_new_note"
+        android:textSize="19sp" />
+</LinearLayout>

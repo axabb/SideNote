@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">SignUp&amp;Login</string>
+    <string name="hello">Hello !</string>
+    <string name="organize_your_thoughts_ideas_and_inspirations_effortlessly_with_sidenote">Organize your thoughts, ideas, and inspirations effortlessly with SideNote.</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="login">LOGIN</string>
+    <string name="todo">TODO</string>
+    <string name="hi">Hi!</string>
+    <string name="create_a_new_account">Create a new account</string>
+    <string name="username">Username</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="sign_up1">SIGN UP</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="login1">Login</string>
+    <string name="welcome_back">Welcome Back!</string>
+    <string name="sign_in_to_continue">Sign in to continue</string>
+    <string name="username1">Username</string>
+    <string name="password1">Password</string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="sign_up2">Sign up</string>
+    <string name="login2">LOGIN</string>
+    <string name="notes">All Notes</string>
+    <string name="logout">Logout</string>
+    <string name="my_notes">My Notes</string>
+    <string name="search_notes">Search notes....</string>
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    <string name="add_new_note">Add New Note</string>
+    <string name="title1">Title</string>
+    <string name="description1">Description</string>
+</resources>

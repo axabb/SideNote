@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#edf2ef"
+    tools:context=".SignUp">
+
+    <Button
+        android:id="@+id/back_to_start"
+        android:layout_width="67dp"
+        android:layout_height="51dp"
+        android:drawableLeft="@drawable/baseline_arrow_back_ios_new_24"
+        android:drawableTint="#540f0f"
+        android:background="@android:color/transparent"
+        android:layout_gravity="start"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/Title1"
+        android:layout_width="287dp"
+        android:layout_height="57dp"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/hi"
+        android:textColor="#540f0f"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/Title2"
+        android:layout_width="287dp"
+        android:layout_height="57dp"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/create_a_new_account"
+        android:textColor="#8a3434"
+        android:textSize="21sp"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/sign_username"
+        android:layout_width="332dp"
+        android:layout_height="51dp"
+        android:drawableStart="@drawable/baseline_person_24"
+        android:drawablePadding="10dp"
+        android:drawableTint="#8a3434"
+        android:hint="@string/username"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:background="@android:color/transparent"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="19dp"/>
+
+    <EditText
+        android:id="@+id/sign_email"
+        android:layout_width="335dp"
+        android:layout_height="47dp"
+        android:drawableStart="@drawable/baseline_email_24"
+        android:drawablePadding="10dp"
+        android:drawableTint="#8a3434"
+        android:hint="@string/email"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:inputType="textEmailAddress"
+        android:background="@android:color/transparent"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="19dp"/>
+
+    <EditText
+        android:id="@+id/sign_password"
+        android:layout_width="332dp"
+        android:layout_height="50dp"
+        android:drawableStart="@drawable/baseline_lock_24"
+        android:drawablePadding="10dp"
+        android:drawableTint="#8a3434"
+        android:hint="@string/password"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:inputType="textPassword"
+        android:background="@android:color/transparent"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="19dp"/>
+
+    <Button
+        android:id="@+id/signup_btn"
+        android:layout_width="247dp"
+        android:layout_height="57dp"
+        android:backgroundTint="#bf4b4b"
+        android:text="@string/sign_up1"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="36dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="8dp">
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/already_have_an_account"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="8dp"/>
+        <Button
+            android:id="@+id/sign_to_log"
+            android:layout_width="93dp"
+            android:layout_height="49dp"
+            android:text="@string/login1"
+            android:textSize="17sp"
+            android:textColor="#bf4b4b"
+            android:background="@android:color/transparent" />
+
+    </LinearLayout>
+</LinearLayout>
