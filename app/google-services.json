@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "934331660105",
+    "project_id": "sidenote-a1cc5",
+    "storage_bucket": "sidenote-a1cc5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:934331660105:android:23fdd23940ae5b539e4c98",
+        "android_client_info": {
+          "package_name": "com.example.sidenote"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCIVZk-dolRI4GQN3Gue3hTKL1kI-otJZM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

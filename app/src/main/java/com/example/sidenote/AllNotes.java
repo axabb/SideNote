@@ -10,6 +10,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -18,6 +19,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.SearchView;
 import android.widget.Toast;
+import androidx.appcompat.widget.Toolbar;
 
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -31,22 +33,22 @@ import java.util.List;
 
 public class AllNotes extends AppCompatActivity {
     Button add;
-
     FirebaseAuth mAuth;
     MenuInflater inflater;
-
     NotesAdapter notesAdapter;
     RecyclerView notesRecycler;
-
     EditText search;
     static final int UPDATE_REQUEST_CODE = 123;
-
     List<NotesModel> notesModelList;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_all_notes);
+
+        Toolbar tbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(tbar);
 
         mAuth = FirebaseAuth.getInstance();
 
@@ -144,7 +146,7 @@ public class AllNotes extends AppCompatActivity {
                     @Override
                     public void onSuccess(QuerySnapshot queryDocumentSnapshots) {
                         notesAdapter.clear();
-                        List<DocumentSnapshot> dsList=queryDocumentSnapshots.getDocuments();
+                        List<DocumentSnapshot> dsList = queryDocumentSnapshots.getDocuments();
                         for (int i=0;i<dsList.size(); i++){
                             DocumentSnapshot documentSnapshot = dsList.get(i);
                             NotesModel notesModel = documentSnapshot.toObject(NotesModel.class);
@@ -165,8 +167,8 @@ public class AllNotes extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        inflater = getMenuInflater();
-        inflater.inflate(R.menu.menu, menu);
+        Log.d("Menu", "onCreateOptionsMenu");
+        getMenuInflater().inflate(R.menu.menu, menu);
         return true;
     }
 

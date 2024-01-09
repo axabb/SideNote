@@ -9,6 +9,16 @@
     android:background="#edf2ef"
     tools:context=".AllNotes">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:elevation="4dp"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:background="#bf4b4b"
+        android:title="" />
+
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"

@@ -14,8 +14,6 @@ public class HomeActivity extends AppCompatActivity {
     Button btn1, btn2;
     FirebaseAuth mAuth;
 
-
-
     @Override
     public void onStart() {
         super.onStart();

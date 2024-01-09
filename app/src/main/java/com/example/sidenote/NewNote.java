@@ -87,6 +87,7 @@ public class NewNote extends AppCompatActivity {
                     @Override
                     public void onFailure(@NonNull Exception e) {
                         Toast.makeText(NewNote.this, e.getMessage(), Toast.LENGTH_SHORT).show();
+                        progressDialog.cancel();
 
                     }
                 });
